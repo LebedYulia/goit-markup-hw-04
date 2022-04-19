@@ -54,11 +54,12 @@ p {
 
 /* Logo */
 
-.logo {
-  margin-right: 93px;
+.logo {  
+  display: block;
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
+  font-style: normal;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
@@ -79,6 +80,10 @@ p {
   display: flex;
   align-items: center;
   margin-right: auto;
+}
+
+.site-nav.list{
+  margin-left: 93px;
 }
 
 .site-nav .item:not(:last-child) {
@@ -109,6 +114,8 @@ p {
 }
 
 .contacts .link-header {
+  display: flex;
+  align-items: center;
   color: var(--primary-text-color);
   fill: var(--primary-text-color);
 }
@@ -223,11 +230,18 @@ button:focus {
   margin-right: 30px;
 }
 
-.icon {
+.features-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 270px;
   height: 120px;
-  padding: 25px 100px 25px 100px;
   background-color: var(--secondary-bg-color);
+
+}
+.icon {
+  width: 70px;
+  height: 70px;  
 }
 
 .features-title {
@@ -292,6 +306,10 @@ img {
   margin-bottom: 10px;
 }
 
+.team-position{
+  margin-bottom: 16px;
+}
+
 .social-link {
   display: flex;
   align-items: center;
@@ -315,8 +333,7 @@ img {
 
 .social {
   display: flex;
-  justify-content: center;
-  margin-top: 16px;
+  justify-content: center;  
 }
 
 /* Customers */
@@ -354,27 +371,18 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .container_footer {
   display: flex;
   align-items: baseline;
-}
-
-.footer .logo {
-  margin-right: auto;
-  margin-bottom: 20px;
-}
-
-.adress {
-  display: flex;
-  flex-direction: column;
 }
 
 .footer-list .item:not(:last-child) {
   padding-bottom: 9px;
 }
 
-.footer-list {
-  margin-right: 70px;
+.footer-list{
+  margin: 20px 70px 0 0;  
 }
 
 .footer-list .link {
@@ -392,7 +400,6 @@ img {
 
 .social-title {
   margin-bottom: 20px;
-
   font-style: normal;
   text-transform: uppercase;
   font-size: 14px;
@@ -475,9 +482,15 @@ border-radius: 4px;
 .gallery-card {
   margin-right: 30px;
   margin-bottom: 30px;
+} 
+
+.gallery-link{
+  display: block;
+  text-decoration: none;
 }
 
-.gallery-card:hover {
+.gallery-link:hover,
+.gallery-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
               0px 4px 4px rgba(0, 0, 0, 0.06), 
               1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -508,7 +521,8 @@ border-radius: 4px;
   letter-spacing: 0.06em;
 }
 
-.gallery-text {
+.gallery-text {  
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.88; 
+  color: var(--primary-text-color); 
 }
